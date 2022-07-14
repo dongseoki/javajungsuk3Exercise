@@ -1,4 +1,6 @@
- class ThreadEx10 implements Runnable  {
+package ch13;
+
+class ThreadEx10 implements Runnable  {
 	static boolean autoSave = false;
 
 	public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package ch13;
+
 import javax.swing.JOptionPane;
 
 class ThreadEx7 {

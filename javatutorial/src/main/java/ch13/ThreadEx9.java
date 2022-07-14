@@ -1,4 +1,6 @@
- class ThreadEx9 {
+package ch13;
+
+class ThreadEx9 {
 	public static void main(String args[]) throws Exception {
 		ThreadGroup main = Thread.currentThread().getThreadGroup();
 		ThreadGroup grp1 = new ThreadGroup("Group1");
