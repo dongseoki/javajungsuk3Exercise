@@ -56,8 +56,10 @@
 //	}
 //
 //	public void remove(String dishName) {
+//        System.out.println("remove의 시작.");
 //
 //		synchronized(this) {
+//            System.out.println("remove의 synchro블록의 시작 : " + Thread.currentThread().getName());
 //			String name = Thread.currentThread().getName();
 //
 //			while(dishes.size()==0) {
