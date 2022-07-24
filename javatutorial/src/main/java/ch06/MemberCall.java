@@ -16,7 +16,7 @@ class MemberCall {
 }
 
 	void instanceMethod1() {
-		System.out.println(cv);		
+		System.out.println(cv);
 		System.out.println(iv); // 인스턴스메서드에서는 인스턴스변수를 바로 사용가능.
 }
 

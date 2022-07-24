@@ -7,7 +7,7 @@ class ForkJoinEx1 {
 
 	public static void main(String[] args) {
 		long from = 1L;
-		long to   = 100_000_000L;
+		long to   = 1_000_000_000L;
 
 		SumTask task = new SumTask(from, to);
 
@@ -31,6 +31,7 @@ class ForkJoinEx1 {
 class SumTask extends RecursiveTask<Long> {
 	long from;
 	long to;
+	long numSize = 1000;
 
 	SumTask(long from, long to) {
 		this.from = from;
@@ -40,7 +41,7 @@ class SumTask extends RecursiveTask<Long> {
 	public Long compute() {
 		long size = to - from;
 
-		if(size <= 5)     // 더할 숫자가 5개 이하면
+		if(size <= numSize)     // 더할 숫자가 5개 이하면
 			return sum(); // 숫자의 합을 반환
 
 		long half = (from+to)/2;
