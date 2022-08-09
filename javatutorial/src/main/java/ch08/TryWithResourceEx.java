@@ -30,6 +30,7 @@ class CloseableResource implements AutoCloseable {
 			throw new WorkException("WorkException발생!!!");
 	}
 
+	@Override
 	public void close() throws CloseException {
 		System.out.println("close()가 호출됨");
 		throw new CloseException("CloseException발생!!!");
