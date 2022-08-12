@@ -1,4 +1,4 @@
-package ch14.stream;
+package ch14.stream.MyTest;
 
 import java.util.Arrays;
 import java.util.Comparator;
