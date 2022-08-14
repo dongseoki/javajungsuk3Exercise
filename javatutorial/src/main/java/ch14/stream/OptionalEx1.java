@@ -43,7 +43,7 @@ class OptionalEx1 {
 		System.out.println("opt.equals(opt2)?"+opt.equals(opt2)); // true
 
 		int result3 = optStrToInt(Optional.of("123"), 0);
-		int result4 = optStrToInt(Optional.of(""), 0);
+		int result4 = optStrToInt(Optional.of("asdf"), 0);
 
 		System.out.println("result3="+result3);
 		System.out.println("result4="+result4);
